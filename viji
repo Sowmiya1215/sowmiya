@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vijayalakshmi M</title>
+  <meta name="description" content="Portfolio of Vijayalakshmi M — CSBS student with interests in data analytics and digital marketing." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #111833;
+      --muted: #9fb0ff;
+      --text: #e9ecff;
+      --accent: #6ea8ff;
+      --chip: #1b2552;
+      --ring: rgba(110,168,255,.35);
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1a245e33 0%, transparent 60%),
+                  radial-gradient(1200px 800px at 110% -30%, #2a5fff22 0%, transparent 60%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    header { display: grid; grid-template-columns: 120px 1fr; gap: 20px; align-items: center; }
+    .avatar {
+      width: 120px; height: 120px; border-radius: 50%; overflow: hidden; border: 3px solid var(--ring);
+      box-shadow: 0 10px 30px rgba(0,0,0,.3);
+      background: #0a0f22;
+      display: grid; place-items: center;
+    }
+    .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .title h1 { margin: 0 0 4px; font-size: 2rem; letter-spacing: .2px; }
+    .subtitle { opacity: .85; font-weight: 500; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .chip { background: var(--chip); color: var(--muted); padding: 6px 10px; border-radius: 999px; font-size: .85rem; border: 1px solid #2a3470; }
+
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; margin-top: 22px; }
+    .card { background: linear-gradient(180deg, #0f1732 0%, #0d132a 100%); border: 1px solid #1f2a59; border-radius: 16px; padding: 18px; box-shadow: 0 8px 28px rgba(0,0,0,.25); }
+    .card h2 { margin: 0 0 8px; font-size: 1.15rem; letter-spacing: .2px; }
+    .muted { color: var(--muted); }
+
+    .col-8 { grid-column: span 8; }
+    .col-4 { grid-column: span 4; }
+    .col-6 { grid-column: span 6; }
+    .col-12 { grid-column: span 12; }
+
+    @media (max-width: 900px) {
+      header { grid-template-columns: 90px 1fr; }
+      .grid { grid-template-columns: 1fr; }
+      .col-8, .col-4, .col-6, .col-12 { grid-column: auto; }
+    }
+
+    /* Sections */
+    .section { display: grid; gap: 10px; }
+    .objective p { margin: 0; opacity: .95; }
+
+    .list { display: grid; gap: 10px; }
+    .item { display: grid; gap: 6px; padding: 10px; border-radius: 12px; background: #0e1531; border: 1px dashed #263166; }
+    .item strong { display: block; }
+
+    .timeline { display: grid; gap: 14px; position: relative; }
+    .edu { display: grid; gap: 4px; padding-left: 14px; border-left: 2px solid #243067; }
+    .edu .meta { font-size: .9rem; color: var(--muted); }
+
+    .contact { display: grid; gap: 10px; }
+    .contact a { word-break: break-all; }
+    .btns { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 12px; border: 1px solid #29408a; background: #10225a; color: var(--text);
+      box-shadow: 0 6px 16px rgba(0,0,0,.25);
+    }
+    .btn:hover { transform: translateY(-1px); transition: transform .2s ease; text-decoration: none; }
+
+    footer { text-align: center; opacity: .7; padding: 24px 0 6px; font-size: .95rem; }
+
+    /* Print */
+    @media print {
+      body { background: white; color: #111; }
+      .card, .item { background: white !important; border: 1px solid #ddd; box-shadow: none; }
+      .btns { display: none; }
+      a { color: #0645ad; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Header / Hero -->
+    <header>
+      <div class="avatar" aria-label="Profile photo">
+        <!-- Replace profile.jpg with your own image file -->
+        <img src="profile.jpg" alt="Portrait of Vijayalakshmi M" onerror="this.outerHTML='<div style=\'font-size:12px;color:#8aa2ff;opacity:.9;text-align:center;padding:6px\'>Add <b>profile.jpg</b><br/> (400×400)</div>'" />
+      </div>
+      <div class="title">
+        <h1>Vijayalakshmi M</h1>
+        <div class="subtitle">B.Tech — Computer Science & Business Systems</div>
+        <div class="chips" aria-label="Skills quick list">
+          <span class="chip">C</span>
+          <span class="chip">Python</span>
+          <span class="chip">Data Analytics</span>
+          <span class="chip">Digital Marketing</span>
+        </div>
+        <div class="btns">
+          <a class="btn" href="mailto:vijayalakshmim948@gmail.com" aria-label="Email Vijayalakshmi">✉️ Email</a>
+          <a class="btn" href="tel:+918754247369" aria-label="Call Vijayalakshmi">📞 Call</a>
+          <a class="btn" href="#contact" aria-label="Jump to contact">📍 Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Grid -->
+    <section class="grid" style="margin-top:22px">
+      <!-- Objective -->
+      <article class="card col-8 section objective" id="about">
+        <h2>Objective</h2>
+        <p>
+          Seeking an opportunity at Google to utilize my expertise in digital marketing and data analytics to drive measurable growth and innovation. With a proven track record of developing impactful strategies and leveraging data-driven insights, I aim to contribute to Google’s mission of organizing and optimizing information for global impact. My goal is to deliver high-value solutions that align with business objectives while continuously expanding my skills in a fast-paced, innovative environment. Passionate about staying ahead of industry trends and fostering collaboration, I am eager to be a part of a forward-thinking team committed to excellence and creativity.
+        </p>
+      </article>
+
+      <!-- Quick Info -->
+      <aside class="card col-4 section">
+        <h2>Quick Info</h2>
+        <div class="list">
+          <div class="item"><strong>Location</strong> 3/136 Mela Street, Kalingapatti, Tenkasi District — 627719</div>
+          <div class="item"><strong>Email</strong> <a href="mailto:vijayalakshmim948@gmail.com">vijayalakshmim948@gmail.com</a></div>
+          <div class="item"><strong>Phone</strong> <a href="tel:+918754247369">+91 87542 47369</a></div>
+          <div class="item"><strong>Languages</strong> English, Tamil</div>
+        </div>
+      </aside>
+
+      <!-- Skills -->
+      <article class="card col-4 section">
+        <h2>Skills</h2>
+        <ul class="list" aria-label="Skills list">
+          <li class="item">C</li>
+          <li class="item">Python</li>
+          <li class="item">Data Analysis & Reporting</li>
+          <li class="item">Digital Marketing Fundamentals</li>
+        </ul>
+      </article>
+
+      <!-- Education -->
+      <article class="card col-8 section">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="edu">
+            <strong>B.Tech — Computer Science & Business Systems</strong>
+            <div class="meta">K.Ramakrishan College Of Engineering • 2027</div>
+          </div>
+          <div class="edu">
+            <strong>Class XII (HSC)</strong>
+            <div class="meta">Govt. Hr. Sec. School • 2023 • 79%</div>
+          </div>
+          <div class="edu">
+            <strong>Class X (SSLC)</strong>
+            <div class="meta">Govt. Hr. Sec. School • 2021</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Contact -->
+      <article class="card col-12 section" id="contact">
+        <h2>Contact</h2>
+        <div class="contact">
+          <div>
+            <strong>Email:</strong> <a href="mailto:vijayalakshmim948@gmail.com">vijayalakshmim948@gmail.com</a>
+          </div>
+          <div>
+            <strong>Phone:</strong> <a href="tel:+918754247369">+91 87542 47369</a>
+          </div>
+          <div>
+            <strong>Address:</strong> 3/136 Mela Street, Kalingapatti, Tenkasi District — 627719
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Vijayalakshmi M · Built with pure HTML & CSS
+    </footer>
+  </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+
+  <!--
+    How to use:
+    1) Save this file as index.html
+    2) Place a square headshot image next to it named "profile.jpg" (recommended 400×400)
+    3) Open index.html in your browser
+  -->
+</body>
+</html>

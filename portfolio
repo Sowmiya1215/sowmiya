@@ -1,0 +1,41 @@
+export default function Portfolio() {
+  return (
+    <div className="min-h-screen bg-gray-100 text-gray-800 p-6">
+      <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-2xl p-8">
+        {/* Header */}
+        <h1 className="text-3xl font-bold text-center text-indigo-600 mb-4">
+          Sowmiya M
+        </h1>
+        <p className="text-center text-lg mb-6">
+          3rd Year Student @ K. Ramakrishnan College of Engineering
+        </p>
+
+        {/* About */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-indigo-500 mb-3">About Me</h2>
+          <p>
+            I am a passionate engineering student eager to learn new skills and explore opportunities in technology, innovation, and problem solving.
+          </p>
+        </section>
+
+        {/* Skills */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-indigo-500 mb-3">Skills</h2>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>Programming in C & C++</li>
+            <li>Web Development (HTML, CSS, JavaScript, React)</li>
+            <li>Database Management (MySQL)</li>
+            <li>Problem Solving & Logical Thinking</li>
+            <li>Communication & Team Collaboration</li>
+          </ul>
+        </section>
+
+        {/* Contact */}
+        <section>
+          <h2 className="text-2xl font-semibold text-indigo-500 mb-3">Contact</h2>
+          <p>Email: <a href="mailto:sowmiyamohanraj06@gmail.com" className="text-indigo-600 underline">sowmiyamohanraj06@gmail.com</a></p>
+        </section>
+      </div>
+    </div>
+  );
+}
